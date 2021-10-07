@@ -1,1 +1,1 @@
-web: npm run prod --prefix frontend
+web:ENV=prod run prod --prefix frontend
