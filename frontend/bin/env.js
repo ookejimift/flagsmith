@@ -13,3 +13,4 @@ const target = path.resolve(__dirname, '../common/project.js');
 console.log(`Using project_${env}.js`.green);
 
 fs.copySync(src, target);
+
