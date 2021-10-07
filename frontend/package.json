@@ -14,7 +14,9 @@
     "dotenv": "node ./bin/dotenv.js && node ./bin/yaml-env.js",
     "bundle": "node node_modules/.bin/webpack -p --progress --config ./webpack/webpack.config.prod.js",
     "bundlestaging": "node node_modules/.bin/webpack -p --progress --config ./webpack/webpack.config.staging.js",
-    "bundledev": "node node_modules/.bin/webpack -p --progress --config ./webpack/webpack.config.dev.js"
+    "bundledev": "node node_modules/.bin/webpack -p --progress --config ./webpack/webpack.config.dev.js",
+    "prod": "npm run env && npm run start",
+    "postinstall": "npm run bundle"
   },
   "engines": {
     "node": "12.x",
