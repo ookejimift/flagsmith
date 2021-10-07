@@ -1,0 +1,8 @@
+{
+    "name": "flagsmith",
+    "version": "2.2.3",
+    "description": "Flagsmith parent",
+    "scripts": {
+        "postinstall": "npm install --prefix frontend && npm run env --prefix frontend && npm run bundle --prefix frontend"
+    }
+}

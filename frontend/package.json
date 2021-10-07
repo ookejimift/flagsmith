@@ -15,7 +15,7 @@
     "bundle": "node node_modules/.bin/webpack -p --progress --config ./webpack/webpack.config.prod.js",
     "bundlestaging": "node node_modules/.bin/webpack -p --progress --config ./webpack/webpack.config.staging.js",
     "bundledev": "node node_modules/.bin/webpack -p --progress --config ./webpack/webpack.config.dev.js",
-    "prod": "ENV=prod STATIC_ASSET_CDN_URL=/ npm start",
+    "prod": "npm run env && npm start",
     "postinstall": "npm run env && ENV=prod STATIC_ASSET_CDN_URL=/ npm run bundle"
   },
   "engines": {
