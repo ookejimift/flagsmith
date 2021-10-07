@@ -1,1 +1,1 @@
-web:ENV=prod run prod --prefix frontend
+web:npm run prod --prefix frontend
